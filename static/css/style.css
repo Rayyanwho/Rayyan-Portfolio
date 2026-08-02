@@ -1120,18 +1120,90 @@ body > *:not(#bg-canvas){
     .logo{
         font-size:1.5rem;
     }
+@media (max-width: 600px){
+
+    nav{
+        position:relative;
+        top:auto;
+        left:auto;
+        transform:none;
+
+        width:92%;
+        margin:20px auto 0;
+
+        padding:16px 20px;
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
 
     .nav-links{
         justify-content:center;
-        gap:14px;
+        gap:10px;
         flex-wrap:wrap;
+        width:100%;
     }
 
     .nav-links a{
         font-size:.85rem;
-        padding:8px 12px;
+        font-weight:600;
+
+        padding:10px 18px;
+
+        background:rgba(255,255,255,.06);
+        border:1px solid rgba(255,255,255,.12);
+        border-radius:12px;
+
+        color:#F8FAFC;
     }
 
+    .nav-links a:active{
+        background:#38bdf8;
+        color:#0f172a;
+        transform:scale(0.96);
+    }
+
+    body{
+        padding-top:20px;
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        width:90%;
+        text-align:center;
+        gap:40px;
+        padding-top:40px;
+        min-height:auto;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .hero-text h2{
+        font-size:1.2rem;
+    }
+
+    .hero-btn{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-right:0;
+        margin-top:15px;
+    }
+
+    .hero-image{
+        margin-top:0;
+    }
+
+    .image-card{
+        max-width:280px;
+        margin:0 auto;
+    }
+}
     body{
         padding-top:20px;   /* was 100px — no longer needed since nav isn't fixed */
     }
