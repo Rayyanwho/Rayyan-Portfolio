@@ -1100,3 +1100,73 @@ body > *:not(#bg-canvas){
         margin:0 auto;
     }
 }
+
+@media (max-width: 600px){
+
+    nav{
+        position:relative;   /* was fixed — now flows normally */
+        top:auto;
+        left:auto;
+        transform:none;
+
+        width:92%;
+        margin:20px auto 0;
+
+        padding:16px 20px;
+        flex-direction:column;
+        gap:14px;
+    }
+
+    .logo{
+        font-size:1.5rem;
+    }
+
+    .nav-links{
+        justify-content:center;
+        gap:14px;
+        flex-wrap:wrap;
+    }
+
+    .nav-links a{
+        font-size:.85rem;
+        padding:8px 12px;
+    }
+
+    body{
+        padding-top:20px;   /* was 100px — no longer needed since nav isn't fixed */
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        width:90%;
+        text-align:center;
+        gap:40px;
+        padding-top:40px;   /* was 220px — much smaller now, nav isn't floating over it */
+        min-height:auto;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .hero-text h2{
+        font-size:1.2rem;
+    }
+
+    .hero-btn{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-right:0;
+        margin-top:15px;
+    }
+
+    .hero-image{
+        margin-top:0;
+    }
+
+    .image-card{
+        max-width:280px;
+        margin:0 auto;
+    }
+}
