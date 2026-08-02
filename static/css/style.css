@@ -1037,3 +1037,66 @@ body > *:not(#bg-canvas){
     border-color: rgba(255,255,255,.1);
     box-shadow:none;
 }
+
+@media (max-width: 600px){
+
+    nav{
+        width:92%;
+        padding:14px 20px;
+        flex-wrap:wrap;
+        gap:12px;
+        justify-content:center;
+    }
+
+    .logo{
+        font-size:1.5rem;
+        width:100%;
+        text-align:center;
+    }
+
+    .nav-links{
+        width:100%;
+        justify-content:center;
+        gap:16px;
+        flex-wrap:wrap;
+    }
+
+    .nav-links a{
+        font-size:.85rem;
+        padding:8px 12px;
+    }
+
+    #hero{
+        grid-template-columns: 1fr;
+        width:90%;
+        text-align:center;
+        gap:40px;
+        padding-top:220px; /* pushes content below the taller wrapped nav */
+        min-height:auto;
+    }
+
+    .hero-text h1{
+        font-size:2.8rem;
+    }
+
+    .hero-text h2{
+        font-size:1.2rem;
+    }
+
+    .hero-btn{
+        display:block;
+        width:100%;
+        text-align:center;
+        margin-right:0;
+        margin-top:15px;
+    }
+
+    .hero-image{
+        margin-top:0;
+    }
+
+    .image-card{
+        max-width:280px;
+        margin:0 auto;
+    }
+}
